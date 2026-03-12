@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman Shaheen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #fafaf8;
+            --text: #1a1a1a;
+            --text-light: #5a5a5a;
+            --border: #e0e0e0;
+            --accent: #2b2b2b;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px 120px;
+        }
+
+        h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin-bottom: 64px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease 0.2s forwards;
+        }
+
+        section {
+            margin-bottom: 56px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.3s; }
+        section:nth-child(3) { animation-delay: 0.4s; }
+        section:nth-child(4) { animation-delay: 0.5s; }
+        section:nth-child(5) { animation-delay: 0.6s; }
+        section:nth-child(6) { animation-delay: 0.7s; }
+
+        h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 1px solid var(--border);
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .role {
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .company {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .education-item {
+            padding-left: 20px;
+            border-left: 1px solid var(--border);
+        }
+
+        .degree {
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .school {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .interests {
+            font-size: 1.05rem;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 60px 20px 100px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Salman Shaheen</h1>
+        <p class="tagline">Product manager building platforms that move money and solve problems.</p>
+
+        <section>
+            <h2>@product</h2>
+            <div class="experience-item">
+                <div class="role">Product Manager, Platform</div>
+                <div class="company">Capital One</div>
+            </div>
+            <div class="experience-item">
+                <div class="role">Product Manager, Mobile</div>
+                <div class="company">Capital One</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>@strategy</h2>
+            <div class="experience-item">
+                <div class="role">Executive Partner</div>
+                <div class="company">OTCR Consulting</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>@software</h2>
+            <div class="experience-item">
+                <div class="role">Software Engineer Intern</div>
+                <div class="company">AbbVie, StoneX, State Farm</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>@school</h2>
+            <div class="education-item">
+                <div class="degree">B.S. Computer Science & Economics · Senior 100</div>
+                <div class="school">University of Illinois Urbana-Champaign</div>
+            </div>
+        </section>
+
+        <section>
+            <p class="interests">When I'm not building products, I'm reading Marvel comics, perfecting my AeroPress recipe, or tinkering with side projects & AI.</p>
+        </section>
+    </div>
+</body>
+</html>
